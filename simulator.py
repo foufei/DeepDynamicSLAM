@@ -33,7 +33,7 @@ class Simulator:
             # Set the initial position
             x = np.random.uniform(low=-distance, high=distance)
             y = np.random.uniform(low=-distance, high=distance)
-            dynamic = p.loadURDF("sphere2.urdf", [x, y, 1], [0, 0, 0], globalScaling=1.5)
+            dynamic = p.loadURDF("sphere2.urdf", [x, y, 1], p.getQuaternionFromEuler([0,0,0]), globalScaling=1.5)
 
             # Set the velocity
             v_x = np.random.uniform(-dynamic_velocity, dynamic_velocity)
