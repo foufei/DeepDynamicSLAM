@@ -9,9 +9,10 @@ class Simulator:
         # self.agent = p.loadURDF("humanoid/humanoid.urdf", [0,0,0.9], p.getQuaternionFromEuler([np.pi/2,0,0]), globalScaling=0.25)
         self.obstacles = []
         self.dynamics = []
-        self.env_init()
 
-    def env_init(self, num_obstacles=2, num_dynamics=2, dynamic_velocity=10, distance=50):
+        self.initialize_env()
+
+    def initialize_env(self, num_obstacles=2, num_dynamics=2, dynamic_velocity=10, distance=50):
         # Set up the physics simulation
         p.connect(p.GUI) # or p.DIRECT for headless mode
         p.setGravity(0, 0, -9.81) # set gravity in z direction
