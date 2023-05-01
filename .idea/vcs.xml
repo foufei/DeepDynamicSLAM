@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SLAMPy-Monocular-SLAM-implementation-in-Python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/g2opy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/pangolin" vcs="Git" />
   </component>
 </project>
